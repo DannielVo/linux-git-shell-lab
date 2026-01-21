@@ -1,0 +1,11 @@
+Task 5 - Breaking and Recovering a Git Project
+
+1. Deleted README.md and modified feature.txt
+2. Committed the broken state with message "Broke the repo"
+3. Ran `git reflog` to locate the previous good commit
+4. Identified HEAD@{1} as the correct state before damage
+5. Used `git reset --hard HEAD@{1}` to restore repository
+6. Used `git clean -fd` to remove untracked files
+7. Verified repository state using `git status`
+
+Result: Repository successfully restored to a clean working state.
